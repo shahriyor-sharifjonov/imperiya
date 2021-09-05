@@ -43,6 +43,11 @@
       box-shadow: 0px 4px 4px 0px #00000040;
       border-radius: 32px;
       overflow: hidden;
+      @media (hover: hover){
+        &:hover .intro__item-bg{
+          transform: scale(1.1);
+        }
+      }
       @include media($md){
         margin-right: 0;
         margin-bottom: 30px;
@@ -50,6 +55,7 @@
       }
     }
     &-bg{
+      transition: 400ms ease;
       position: absolute;
       top: 0;
       bottom: 0;
