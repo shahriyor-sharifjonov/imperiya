@@ -83,3 +83,18 @@ body{
     }
   }
 }
+.label{
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+.input{
+  width: 100%;
+  padding-left: 8px;
+  height: 35px;
+  background: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: inherit;
+}

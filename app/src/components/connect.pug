@@ -1,0 +1,32 @@
+mixin connect()
+  .connect 
+    .connect__body.container 
+      h2.connect__title Связаться с менеджером
+      .connect__row 
+        form(action="").connect__form.connect__item
+          label(for="name").label.connect__label Ваше Имя
+          input(type="text" required)#name.input.connect__input 
+          label(for="tel").label.connect__label Телефон
+          input(type="tel" required)#tel.input.connect__input 
+          label(for="email").label.connect__label Е-mail
+          input(type="email" required)#email.input.connect__input 
+          label(for="compname").label.connect__label Компания
+          input(type="text" required)#compname.input.connect__input 
+          button(type="submit").connect__btn Отправить
+        .connect__item
+          p.connect__p Внимание! Неправильно указанный номер телефона, неточный или неполный адрес могут привести к дополнительной задержке!<br>Пожалуйста, внимательно проверяйте ваши персональные данные при оформлении заказа.<br>Конфиденциальность ваших регистрационных данных гарантируется.
+          .connect__docs
+            a(href="#!").connect__doc 
+              img(src="images/pdf.svg", alt="pdf").connect__doc-img
+              p.connect__doc-p Презентация <br>компании
+            a(href="#!").connect__doc 
+              img(src="images/pdf.svg", alt="pdf").connect__doc-img
+              p.connect__doc-p Прайс-лист <br>продукции 2021
+            a(href="#!").connect__doc 
+              img(src="images/excel.svg", alt="excel").connect__doc-img
+              p.connect__doc-p Прайс-лист <br>продукции 2021<br>Exel
+            a(href="#!").connect__doc 
+              img(src="images/excel.svg", alt="excel").connect__doc-img
+              p.connect__doc-p Бланк заказа <br>товаров 2021
+
+        
