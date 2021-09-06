@@ -122,3 +122,21 @@ if(document.querySelector('.catering__slider')){
     ]
   });
 }
+if(document.querySelector('.prods__cats')){
+  $('.prods__cats').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: true,
+    infinite: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 4,
+        }
+      },
+    ]
+  });
+}
