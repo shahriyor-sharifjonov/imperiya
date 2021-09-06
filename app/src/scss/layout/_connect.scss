@@ -84,6 +84,7 @@
       width: 48px;
       @include media($sm){
         margin-right: 6px;
+        width: 30px;
       }
     }
     &:first-child{

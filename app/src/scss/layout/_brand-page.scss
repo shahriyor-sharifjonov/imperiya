@@ -18,8 +18,30 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 20px;
-    @include media(992){
+    width: 100%;
+    margin-bottom: 40px;
+    @include media(1200){
+      width: 100%;
+    }
+    @include media($md){
       flex-direction: column;
+    }
+    &:first-of-type{
+      @include media(992){
+        flex-direction: column;
+      }
+    }
+    &-item{
+      max-width: calc(50% - 10px);
+      width: 100%;
+      @include media(992){
+        max-width: calc(50% - 10px);
+        width: 100%;
+      }
+      @include media($md){
+        max-width: 100%;
+        width: 100%;
+      }
     }
   }
   &__col{
@@ -69,8 +91,15 @@
     aspect-ratio: 1/1;
     width: 220px;
     max-width: 220px;
+    @include media(992){
+      margin-bottom: 10px;
+      max-width: calc(50% - 5px);
+    }
     &:first-child{
       margin-bottom: 20px;
+      @include media(992){
+        margin-bottom: 10px;
+      }
     }
   }
   &__btn{
