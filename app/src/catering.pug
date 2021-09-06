@@ -1,0 +1,42 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="styles/index.css")
+  body 
+    .wrapper
+      include components/header.pug
+      +header 
+      main.main 
+        .catering 
+          .catering__body.container 
+            a(href="index.html").brand__back <img src="images/arrow-left.svg"> Вернуться назад 
+            .catering__row 
+              .catering__col
+                h3.catering__title Сотрудничество с компанией <br>готовой продукции
+                .catering__info <img src="images/correct.svg" alt="correct" class="catering__info-img"> Руководителям и владельцам <br>ресторанов и кафе,  
+                .catering__info <img src="images/correct.svg" alt="correct" class="catering__info-img"> Руководителям и владельцам <br>ресторанов и кафе,  
+                .catering__info <img src="images/correct.svg" alt="correct" class="catering__info-img"> Руководителям и владельцам <br>ресторанов и кафе,  
+                a(href="#!").catering__btn Связаться с менеджером 
+              .catering__col
+                img(src="images/intro-3.webp", alt="").catering__main-img 
+                .catering__slider
+                  .catering__slider-item
+                    img(src="images/cocacola.svg", alt="coca-cola").catering__slider-item__img
+                  .catering__slider-item
+                    img(src="images/zara.svg", alt="zara").catering__slider-item__img
+                  .catering__slider-item
+                    img(src="images/walmart.svg", alt="walmart").catering__slider-item__img
+                  .catering__slider-item
+                    img(src="images/cocacola.svg", alt="coca-cola").catering__slider-item__img
+                  .catering__slider-item
+                    img(src="images/zara.svg", alt="zara").catering__slider-item__img
+                  .catering__slider-item
+                    img(src="images/walmart.svg", alt="walmart").catering__slider-item__img
+
+    script(src="scripts/jquery.js") 
+    script(src="scripts/slick.min.js") 
+    script(src="scripts/index.js") 

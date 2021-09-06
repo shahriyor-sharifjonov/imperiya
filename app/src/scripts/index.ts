@@ -104,3 +104,21 @@ if(document.querySelector('.sponsors__body')){
     ]
   });
 }
+if(document.querySelector('.catering__slider')){
+  $('.catering__slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: false,
+    variableWidth: true,
+    infinite: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+
+        }
+      },
+    ]
+  });
+}

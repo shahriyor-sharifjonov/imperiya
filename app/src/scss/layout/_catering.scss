@@ -1,0 +1,114 @@
+.catering{
+  width: 100%;
+  &__body{
+    width: 100%;
+  }
+  &__col{
+    @include media(992){
+      width: 100%;
+    }
+    &:first-of-type{
+      width: 400px;
+      @include media(992){
+        width: 100%;
+      }
+    }
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    @include media(992){
+      flex-direction: column;
+    }
+  }
+  &__title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+    img{
+      margin-right: 10px;
+    }
+  }
+  &__btn{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #5161B5;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-top: 60px;
+  }
+  &__main-img{
+    max-width: 540px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    margin-bottom: 36px;
+    @include media(992){
+      margin-top: 50px;
+      max-width: 100%;
+    }
+  }
+  &__slider{
+    max-width: 540px;
+    margin-left: -4px;
+    @include media(992){
+      max-width: 100%;
+    }
+    &-item{
+      background: #FFFFFF;
+      box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      width: 140px !important;
+      height: 67px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:not(:last-child){
+        margin-right: 20px;
+      }
+      &__img{
+        filter: grayscale(1);
+      }
+    }
+  }
+  .slick{
+    &-list{
+      overflow: hidden;
+      margin-left: -10px;
+      padding: 10px 0px 10px 15px;
+      position: relative;
+    }
+    &-track{
+      display: flex;
+    }
+  }
+}
