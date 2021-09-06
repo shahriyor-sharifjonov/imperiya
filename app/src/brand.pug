@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="styles/index.css")
+  body 
+    .wrapper
+      include components/header.pug
+      +header 
+      main.main 
+        .brand
+          .brand__body.container
+            a(href="index.html").brand__back <img src="images/arrow-left.svg"> Вернуться назад 
+            .brand__row 
+              .brand__col
+                p.brand__title Сотрудничество с компанией <br>готовой продукции
+                p.brand__p Руководителям и владельцам ресторанов и кафе, <br>буфетов и столовых, а также всем заинтересованным <br>лицам! Компания "Восьмая Империя" предлагает <br>сотрудничество в части реализации нашей продукции. <br>Мы являемся производителями готовой продукции: <br>блины без начинки, блинчики с начинкой, оладьи, <br>сырники, а так же наша компания является владельцем <br>торговой марки «Блинни Бон».
+                form(action="").brand__form
+                  label(for="name").label.brand__label Ваше Имя
+                  input(type="text" id="name" required).input.brand__input  
+                  label(for="tel").label.brand__label Телефон
+                  input(type="tel" id="tel" required).input.brand__input  
+                  button(type="submit").brand__btn Отправить
+              .brand__col.brand__items 
+                .brand__item
+                .brand__item
+                .brand__item
+                .brand__item
+
+    script(src="scripts/index.js") 
