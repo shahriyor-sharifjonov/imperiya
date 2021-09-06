@@ -63,8 +63,9 @@ if(document.querySelector('.sponsors__body')){
     slidesToShow: 5,
     centerMode: false,
     variableWidth: false,
-    infinite: false,
+    infinite: true,
     arrows: false,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 992,
