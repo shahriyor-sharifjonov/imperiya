@@ -358,9 +358,9 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-right: 40px;
+    width: calc(100% - 340px);
     @include media(992){
-      margin-right: 0;
+      width: 100%;
     }
   }
   &__item{
