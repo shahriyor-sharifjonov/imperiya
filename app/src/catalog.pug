@@ -1,0 +1,196 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="styles/index.css")
+  body 
+    .wrapper
+      include components/header.pug
+      +header 
+      main.main   
+        .catalog  
+          .catalog__body.container 
+            a(href="index.html").brand__back <img src="images/arrow-left.svg"> Вернуться назад 
+            .catalog__list
+              .catalog__drop 
+                button(onclick="addActive(this)").catalog__drop-btn <img src="images/catalog.svg" alt="catalog button"> Каталог продукции
+                ul.catalog__drop-list   
+                  li.catalog__drop-li 
+                    button Блины
+                  li.catalog__drop-li 
+                    button Сырники
+                  li.catalog__drop-li 
+                    button Роллы
+                  li.catalog__drop-li 
+                    button Сэндвичи
+                  li.catalog__drop-li 
+                    button Буррито
+                  li.catalog__drop-li 
+                    button Крепы
+                  li.catalog__drop-li 
+                    button Кофе
+              button.catalog__btn Yummy
+              button.catalog__btn БлинниБон 
+              button.catalog__btn Циганка Сэра
+              button.catalog__btn.disabled Space Coffe
+              button.catalog__btn Добавлено на - 1,000,000 р.
+            .prods 
+              .prods__body
+                .prods__cats.catalog__cats
+                  button.prods__cat Все
+                  button.prods__cat.active Блины
+                  button.prods__cat Сырники
+                  button.prods__cat Крепы
+                  button.prods__cat Сэндвичи
+                  button.prods__cat Роллы 
+                  button.prods__cat Буррито
+                .prods__row
+                  .prods__content.catalog__prods
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+                    .prods__item.catalog__prods-item
+                      img(src="images/prods.webp", alt="Eybisi Salad Mix").prods__item-img
+                      p.prods__item-title Eybisi Salad Mix
+                      p.prods__item-p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      p.prods__item-price $14.99
+                      button.prods__item-btn
+                        img(src="images/plus.svg", alt="plus").prods__item-btn__img
+      include components/footer.pug
+      +footer 
+    script(src="scripts/jquery.js") 
+    script(src="scripts/slick.min.js") 
+    script(src="scripts/index.js") 

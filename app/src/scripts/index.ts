@@ -66,6 +66,7 @@ if(document.querySelector('.sponsors__body')){
     infinite: true,
     arrows: false,
     autoplay: true,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 992,
@@ -140,4 +141,8 @@ if(document.querySelector('.prods__cats')){
       },
     ]
   });
+}
+
+function addActive(el){
+  el.classList.toggle('active');
 }
