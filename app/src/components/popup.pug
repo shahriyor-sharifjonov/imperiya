@@ -1,0 +1,17 @@
+mixin popuptel()
+  .popup#call
+    .popup__body.popup__body-with-bg
+      p.popup-call__title Мы оперативно перезвоним вам в течении 30 минут!
+      form(action="#thanks").popup-call__form
+        label(for="tel").label.popup-call__label Ваш телефон
+        div.popup-call__row
+          input(type="tel" id="tel" placeholder="+7 999 99 99 999" required).input.popup-call__input 
+          button(type="submit").popup-call__btn
+            img(src="images/call.svg", alt="").popup-call__btn-img
+    a(href="#!").popup__close 
+
+mixin popupthanks()
+  .popup#thanks
+    .popup__body.popup__body-with-bg
+      p.popup-thanks__title Спасибо за интерес проявленный к нашей компании! Мы постараемся перезвонить вам как можно скорее!
+    a(href="#!").popup__close 
