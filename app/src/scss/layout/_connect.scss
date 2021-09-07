@@ -78,6 +78,14 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    button{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      text-align: left;
+      background: none;
+      border: none;
+    }
     &-p{
       font-style: normal;
       font-weight: normal;

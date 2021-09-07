@@ -16,17 +16,21 @@ mixin connect()
         .connect__item
           p.connect__p Внимание! Неправильно указанный номер телефона, неточный или неполный адрес могут привести к дополнительной задержке!<br>Пожалуйста, внимательно проверяйте ваши персональные данные при оформлении заказа.<br>Конфиденциальность ваших регистрационных данных гарантируется.
           .connect__docs
-            a(href="#!").connect__doc 
-              img(src="images/pdf.svg", alt="pdf").connect__doc-img
-              p.connect__doc-p Презентация <br>компании
-            a(href="#!").connect__doc 
-              img(src="images/pdf.svg", alt="pdf").connect__doc-img
-              p.connect__doc-p Прайс-лист <br>продукции 2021
-            a(href="#!").connect__doc 
-              img(src="images/excel.svg", alt="excel").connect__doc-img
-              p.connect__doc-p Прайс-лист <br>продукции 2021<br>Exel
-            a(href="#!").connect__doc 
-              img(src="images/excel.svg", alt="excel").connect__doc-img
-              p.connect__doc-p Бланк заказа <br>товаров 2021
+            form(action="docs/test-1.xlsx", method="get").connect__doc
+              button(type="submit") 
+                img(src="images/pdf.svg", alt="pdf").connect__doc-img
+                p.connect__doc-p Презентация <br>компании
+            form(action="docs/test-1.xlsx", method="get").connect__doc
+              button(type="submit") 
+                img(src="images/pdf.svg", alt="pdf").connect__doc-img
+                p.connect__doc-p Прайс-лист <br>продукции 2021
+            form(action="docs/test-1.xlsx", method="get").connect__doc
+              button(type="submit") 
+                img(src="images/excel.svg", alt="excel").connect__doc-img
+                p.connect__doc-p Прайс-лист <br>продукции 2021<br>Exel
+            form(action="docs/test-1.xlsx", method="get").connect__doc 
+              button(type="submit")
+                img(src="images/excel.svg", alt="excel").connect__doc-img
+                p.connect__doc-p Бланк заказа <br>товаров 2021
 
         
