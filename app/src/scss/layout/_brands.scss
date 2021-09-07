@@ -52,6 +52,13 @@
       @include media($sm){
         padding: 15px;
       }
+      @media (hover: hover){
+        &:hover{
+          .brands__img{
+            transform: scale(1.1);
+          }
+        }
+      }
       &::before{
         content: '';
         position: absolute;
@@ -62,11 +69,12 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 52.08%), #C4C4C4;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 52.08%);
       }
     }
   }
   &__img{
+    transition: 400ms ease;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -89,5 +97,11 @@
     line-height: 16px;
     color: #FFFFFF;
     padding: 8px 2px 6px 2px;
+    transition: box-shadow 200ms ease;
+    @media (hover: hover){
+      &:hover{
+        box-shadow: 0px 2px 10px 0px #00000040;
+      }
+    }
   }
 }

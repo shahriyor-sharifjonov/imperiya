@@ -112,8 +112,10 @@ if(document.querySelector('.catering__slider')){
     slidesToScroll: 1,
     centerMode: false,
     variableWidth: true,
-    infinite: false,
+    infinite: true,
     arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 992,

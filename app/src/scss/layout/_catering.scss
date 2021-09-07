@@ -63,6 +63,12 @@
     line-height: 16px;
     color: #FFFFFF;
     margin-top: 60px;
+    transition: box-shadow 200ms ease;
+    @media (hover: hover){
+      &:hover{
+        box-shadow: 0px 2px 10px 0px #00000040;
+      }
+    }
   }
   &__main-img{
     max-width: 540px;

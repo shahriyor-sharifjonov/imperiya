@@ -15,3 +15,31 @@ mixin popupthanks()
     .popup__body.popup__body-with-bg
       p.popup-thanks__title Спасибо за интерес проявленный к нашей компании! Мы постараемся перезвонить вам как можно скорее!
     a(href="#!").popup__close 
+
+mixin product()
+  .popup#popup 
+    .popup__body.popup-prod
+      img(src="images/intro-3.webp", alt="gray-block").popup-prod__img
+      .popup-prod__content
+        p.popup-prod__title Лапша Удон с курицей <span>Артикул 008624</span>
+        p.popup-prod__subtitle Состав продукта 
+        p.popup-prod__p Лапша удон отварная, куриное филе, овощной микс, сок имбиря, бульон куриный, растительное масло, куркума, листья петрушки, масло подсолнечное рафинированное дезодорированное, масло кунжутное, кинза, кунжут.
+        .popup-prod__row 
+          .popup-prod__desc Пищевая ценность <span>10,4 г</span>
+          .popup-prod__desc.tar Энергетическая ценность <span>на 100 г продукта</span>
+        .popup-prod__row 
+          .popup-prod__col
+            .popup-prod__desc_sm Белки <span>10,4 г</span>
+            .popup-prod__desc_sm Жиры <span>3,4 г</span>
+            .popup-prod__desc_sm Углеводы <span>23,3 г</span>
+          .popup-prod__col
+            .popup-prod__desc_sm кКал <span>169</span>
+            .popup-prod__desc_sm кДж <span>710</span>
+        .popup-prod__pricing
+          p.popup-prod__price 200 рублей
+          .popup-prod__calc 
+            button.popup-prod__calc-minus -
+            p.popup-prod__calc-p 10
+            button.popup-prod__calc-plus +
+          button.popup-prod__btn Добавить
+    a(href="#!").popup__close 
